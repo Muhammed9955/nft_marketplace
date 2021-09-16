@@ -1,17 +1,19 @@
 import "./Paragraph.styles.css";
 interface Props {
   title: any;
-  paragraph: String[];
+  paragraph?: String[];
+  customComp?: any;
 }
 
-const Pharagraph: React.FC<Props> = ({ title, paragraph }) => {
+const Pharagraph: React.FC<Props> = ({ title, paragraph, customComp }) => {
   return (
     <div style={{ margin: "0", width: "auto" }}>
       {/* <h1 className="title">{title} </h1> */}
       {title}
-      {paragraph.map((i) => (
+      {paragraph?.map((i) => (
         <p style={{ textAlign: "justify", fontSize: "1.2rem" }}>{i}</p>
       ))}
+      {customComp}
     </div>
   );
 };

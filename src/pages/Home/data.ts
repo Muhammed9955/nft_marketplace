@@ -8,6 +8,10 @@ import icon2 from "../../imgs/icon2.png";
 import icon3 from "../../imgs/icon3.png";
 import icon4 from "../../imgs/icon4.png";
 import icon5 from "../../imgs/icon5.png";
+import img1 from "../../imgs/img1.png";
+import img2 from "../../imgs/img2.png";
+import img3 from "../../imgs/img3.png";
+import img4 from "../../imgs/img4.png";
 
 export const cardsArr = [
   {
@@ -63,6 +67,7 @@ export const roadMapData = [
 ];
 
 export const imgs: string[] = [ape1, ape2, ape3, ape4];
+export const imgsArr2: string[] = [img1, img2, img3, img4];
 export const p1: [String] = [
   "BAYC is a collection of 10,000 Bored Ape NFTs—unique digital collectibles living on the Ethereum blockchain. Your Bored Ape doubles as your Yacht Club membership card, and grants access to members-only benefits, the first of which is access to THE BATHROOM, a collaborative graffiti board. Future areas and perks can be unlocked by the community through roadmap activation.",
 ];

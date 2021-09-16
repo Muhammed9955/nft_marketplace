@@ -5,10 +5,12 @@ import toilet from "../../imgs/toilet.png";
 
 import Pharagraph from "../../components/Paragraph/Paragraph.component";
 import ImgsContainer from "../../components/ImgsContainer/ImgsContainer.component";
-import { cardsArr, imgs, p1, p2, p3, p4, p5, p6, p7 } from "./data";
+import { cardsArr, imgs, imgsArr2, p1, p2, p3, p4, p5, p6, p7 } from "./data";
 import BuyAnAPE from "../../components/BuyAnAPE/BuyAnAPE.component";
 import Card from "../../components/Card/Card.component";
 import Roadmap from "../../components/Roadmap/Roadmap.component";
+import MainButton from "../../components/MainButton/MainButton.component";
+import Footer from "../../components/Footer/Footer.component";
 
 interface Props {}
 
@@ -36,6 +38,7 @@ const Home: React.FC<Props> = (props) => {
   const title5 = <h1 className="p_title">THE BATHROOM</h1>;
   const title6 = <h1 className="p_title">ROADMAP ACTIVATIONS</h1>;
   const title7 = <h1 className="p_title">COMMUNITY TOOLS</h1>;
+  const title8 = <h1 className="p_title">THE TEAM</h1>;
 
   const homeRow_2_Right = (
     <div className="homeRow_2_Right">
@@ -43,7 +46,36 @@ const Home: React.FC<Props> = (props) => {
       giveaways, puzzle rewards—and for the creators' BAYC memberships.
     </div>
   );
-
+  const btns = (
+    <div className="btns">
+      <MainButton title="NFTEXP.IO" />
+      <MainButton title="RARITY.TOOLS" />
+    </div>
+  );
+  const p8 = (
+    <div className="">
+      <p>
+        BAYC was created by four friends who set out to make some dope apes,
+        test our skills, and try to build something (ridiculous).
+      </p>
+      <p>
+        <span style={{ color: "yellow" }}>GARGAMEL.</span> STARCRAFT OBSESSED.
+        EATS SMURFS.
+      </p>
+      <p>
+        <span style={{ color: "yellow" }}> GORDON GONER.</span> REFORMED
+        LEVERAGE ADDICT
+      </p>
+      <p>
+        <span style={{ color: "yellow" }}> EMPEROR TOMATO KETCHUP.</span> SPENT
+        ALL THEIR MONEY ON FIRST PRESSES AND PET-NAT.
+      </p>
+      <p>
+        <span style={{ color: "yellow" }}> NO SASS.</span> HERE FOR THE APES.
+        NOT FOR THE SASS.
+      </p>
+    </div>
+  );
   return (
     <div className="home_container">
       <HomeRow
@@ -84,10 +116,26 @@ const Home: React.FC<Props> = (props) => {
       <hr style={{ opacity: ".4" }} />
       <HomeRow
         leftItem={<Pharagraph title={title7} paragraph={p7} />}
+        rightItem={btns}
         smL={8}
         smR={4}
       />
       <hr style={{ opacity: ".4" }} />
+      <HomeRow
+        leftItem={<Pharagraph title={title8} customComp={p8} />}
+        rightItem={<ImgsContainer imgs={imgsArr2} />}
+      />
+      <h4>
+        VERIFIED SMART CONTRACT ADDRESS:
+        <span
+          style={{ color: "yellow", marginLeft: "5px", textAlign: "center" }}
+        >
+          0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D
+        </span>
+      </h4>
+      <hr />
+      <Footer />
+      <br />
     </div>
   );
 };

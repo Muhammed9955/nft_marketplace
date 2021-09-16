@@ -1,9 +1,9 @@
-import "./mainButton.styles.css";
+import "./MainButton.styles.css";
 interface Props {
   title: string;
 }
 
-const HomeRow: React.FC<Props> = ({ title }) => {
+const MainButton: React.FC<Props> = ({ title }) => {
   return <button className="mainBtn"> {title} </button>;
 };
-export default HomeRow;
+export default MainButton;

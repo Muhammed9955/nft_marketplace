@@ -29,7 +29,7 @@
 .toiletImg {
   width: 200px;
   object-fit: contain;
-  margin: 2rem 0;
+  margin-bottom: 2rem 0;
   margin-left: 5rem;
 }
 
@@ -38,4 +38,9 @@
   justify-content: space-between;
   align-items: center;
   margin: 2rem 0;
+}
+.btns {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
 }
