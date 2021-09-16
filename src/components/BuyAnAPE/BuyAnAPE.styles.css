@@ -1,0 +1,26 @@
+.BuyAnAPE_container {
+  background-color: rgb(255, 255, 9);
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 5px;
+  margin: 3rem 0;
+}
+.btn {
+  background-color: black;
+  color: yellow;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  padding: 1rem;
+  width: 250px;
+}
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.BuyAnAPE_p {
+  width: 30%;
+  font-size: 1.2rem;
+}

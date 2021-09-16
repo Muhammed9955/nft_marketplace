@@ -1,12 +1,17 @@
-import React from "react";
-import logo from "./logo.svg";
+import header_hero from "./imgs/header_hero.jpg";
+
 import "./App.css";
-import Home from "./pages/Home.page";
+import Navbar from "./components/Navbar/Navbar.component";
+import Home from "./pages/Home/Home.page";
 
 function App() {
   return (
     <div className="App">
-      <Home />
+      <div style={{ width: "80%", height: "100%", margin: "auto" }}>
+        <Navbar />
+        <img src={header_hero} alt="header_hero" className="header_hero" />
+        <Home />
+      </div>
     </div>
   );
 }

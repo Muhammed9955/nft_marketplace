@@ -1,0 +1,13 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  margin-left: auto;
+}
+.imgsContianer_img {
+  height: 170px;
+  width: 170px;
+  border-radius: 10px;
+  margin: 10px;
+}
