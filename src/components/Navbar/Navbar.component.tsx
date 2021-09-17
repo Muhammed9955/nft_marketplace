@@ -60,7 +60,8 @@ const Navbar: React.FC<Props> = ({
           onClick={() => setOpen(!open)}
         />
         {open && (
-          <div className={open ? "nav_mob__menu acitve" : "nav_mob__menu"}>
+          // <div className={open ? "nav_mob__menu acitve" : "nav_mob__menu"}>
+          <div className={"nav_mob__menu"}>
             <p
               className="mr_m route_item"
               onClick={() => scrollToBuyAnApeRef()}
