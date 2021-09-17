@@ -43,3 +43,18 @@
 .footer_input:focus {
   outline: none;
 }
+@media only screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 300px;
+  }
+  .fotter_text {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .footer_input {
+    max-width: 250px;
+  }
+}

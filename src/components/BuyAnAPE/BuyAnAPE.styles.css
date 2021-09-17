@@ -24,3 +24,22 @@
   width: 30%;
   font-size: 1.2rem;
 }
+.BuyAnAPE_title {
+  font-style: italic;
+  margin: 0;
+}
+@media only screen and (max-width: 768px) {
+  .BuyAnAPE_container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin: 1rem 1rem 1rem 0;
+  }
+  .btn {
+    width: auto;
+  }
+  .BuyAnAPE_p {
+    width: auto;
+  }
+}

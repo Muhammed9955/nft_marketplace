@@ -12,9 +12,14 @@ import Roadmap from "../../components/Roadmap/Roadmap.component";
 import MainButton from "../../components/MainButton/MainButton.component";
 import Footer from "../../components/Footer/Footer.component";
 
-interface Props {}
+interface Props {
+  buyAnApeRef: any;
+  roadMapRef: any;
+  teamRef: any;
+}
 
-const Home: React.FC<Props> = (props) => {
+const Home: React.FC<Props> = ({ buyAnApeRef, roadMapRef, teamRef }) => {
+  // components
   const title1 = (
     <h1>
       WELCOME TO THE <br />
@@ -77,66 +82,76 @@ const Home: React.FC<Props> = (props) => {
     </div>
   );
   return (
-    <div className="home_container">
-      <HomeRow
-        leftItem={<Pharagraph title={title1} paragraph={p1} />}
-        rightItem={<ImgsContainer imgs={imgs} />}
-      />
-      <HomeRow
-        leftItem={<Pharagraph title={title2} paragraph={p2} />}
-        rightItem={homeRow_2_Right}
-      />
-      <BuyAnAPE />
-      <hr style={{ opacity: ".4" }} />
-      <HomeRow
-        leftItem={<Pharagraph title={title3} paragraph={p3} />}
-        rightItem={<img src={mysteryAPE} alt="mysteryAPE" className="gif" />}
-      />
-      <hr style={{ opacity: ".4" }} />
-      <HomeRow leftItem={<Pharagraph title={title4} paragraph={p4} />} />
-      <div className="cards_container">
-        {cardsArr.map((i) => (
-          <Card img={i.img} text={i.text} />
-        ))}
+    <>
+      <div className="home_container">
+        <HomeRow
+          leftItem={<Pharagraph title={title1} paragraph={p1} />}
+          rightItem={<ImgsContainer imgs={imgs} />}
+        />
+        <HomeRow
+          leftItem={<Pharagraph title={title2} paragraph={p2} />}
+          rightItem={homeRow_2_Right}
+        />
+        <BuyAnAPE buyAnApeRef={buyAnApeRef} />
+        <hr style={{ opacity: ".4" }} />
+        <HomeRow
+          leftItem={<Pharagraph title={title3} paragraph={p3} />}
+          rightItem={<img src={mysteryAPE} alt="mysteryAPE" className="gif" />}
+        />
+        <hr style={{ opacity: ".4" }} />
+        <HomeRow leftItem={<Pharagraph title={title4} paragraph={p4} />} />
+        <div className="cards_container">
+          {cardsArr.map((i, n) => (
+            <Card key={n} img={i.img} text={i.text} />
+          ))}
+        </div>
+        <hr style={{ opacity: ".4" }} />
+        <HomeRow
+          leftItem={<Pharagraph title={title5} paragraph={p5} />}
+          rightItem={<img src={toilet} alt="toilet" className="toiletImg" />}
+          smL={9}
+          smR={2}
+        />
+        <hr style={{ opacity: ".4" }} />
+        <HomeRow
+          leftItem={<Pharagraph title={title6} paragraph={p6} />}
+          smL={9}
+          smR={2}
+          roadMapRef={roadMapRef}
+          isRoadMap={true}
+        />
+        <Roadmap />
+        <hr style={{ opacity: ".4" }} />
+        <HomeRow
+          leftItem={<Pharagraph title={title7} paragraph={p7} />}
+          rightItem={btns}
+          smL={8}
+          smR={4}
+        />
+        <hr style={{ opacity: ".4" }} />
+        <HomeRow
+          leftItem={<Pharagraph title={title8} customComp={p8} />}
+          rightItem={<ImgsContainer imgs={imgsArr2} />}
+          teamRef={teamRef}
+          isTeam={true}
+        />
+        <h4 className="home_address">
+          VERIFIED SMART CONTRACT ADDRESS:
+          <span>0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D</span>
+        </h4>
+        <hr />
+        <Footer />
+        <br />
       </div>
-      <hr style={{ opacity: ".4" }} />
-      <HomeRow
-        leftItem={<Pharagraph title={title5} paragraph={p5} />}
-        rightItem={<img src={toilet} alt="toilet" className="toiletImg" />}
-        smL={9}
-        smR={2}
-      />
-      <hr style={{ opacity: ".4" }} />
-      <HomeRow
-        leftItem={<Pharagraph title={title6} paragraph={p6} />}
-        smL={9}
-        smR={2}
-      />
-      <Roadmap />
-      <hr style={{ opacity: ".4" }} />
-      <HomeRow
-        leftItem={<Pharagraph title={title7} paragraph={p7} />}
-        rightItem={btns}
-        smL={8}
-        smR={4}
-      />
-      <hr style={{ opacity: ".4" }} />
-      <HomeRow
-        leftItem={<Pharagraph title={title8} customComp={p8} />}
-        rightItem={<ImgsContainer imgs={imgsArr2} />}
-      />
-      <h4>
-        VERIFIED SMART CONTRACT ADDRESS:
-        <span
-          style={{ color: "yellow", marginLeft: "5px", textAlign: "center" }}
-        >
-          0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D
-        </span>
-      </h4>
-      <hr />
-      <Footer />
-      <br />
-    </div>
+      {/* <div
+        style={{
+          background: "yellow",
+          height: "5vh",
+          width: "100vw",
+          margin: "auto",
+        }}
+      ></div> */}
+    </>
   );
 };
 export default Home;

@@ -10,8 +10,10 @@ const Pharagraph: React.FC<Props> = ({ title, paragraph, customComp }) => {
     <div style={{ margin: "0", width: "auto" }}>
       {/* <h1 className="title">{title} </h1> */}
       {title}
-      {paragraph?.map((i) => (
-        <p style={{ textAlign: "justify", fontSize: "1.2rem" }}>{i}</p>
+      {paragraph?.map((i, n) => (
+        <p key={n} style={{ textAlign: "justify", fontSize: "1.2rem" }}>
+          {i}
+        </p>
       ))}
       {customComp}
     </div>

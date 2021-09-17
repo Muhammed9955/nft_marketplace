@@ -1,7 +1,7 @@
 .App {
   background-color: black;
-  width: 100vw;
-  /* height: 100vh; */
+  /* width: 100vw;  */
+  /* height: 100 */
   padding: 0;
   font-family: "Montserrat", sans-serif;
   color: white;
@@ -11,6 +11,7 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  flex: 1;
 }
 
 .mr_m {
@@ -18,4 +19,15 @@
 }
 .mr_lg {
   margin-right: 2rem;
+}
+.App_container {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+@media only screen and (max-width: 600px) {
+  .App_container {
+    /* width: 100%; */
+    padding: 0 1rem;
+  }
 }

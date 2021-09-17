@@ -13,7 +13,7 @@ const Footer: React.FC<Props> = ({}) => {
   return (
     <div className="footer">
       <div className="">
-        <p>GET ON THE LIST</p>
+        <p className="fotter_text">GET ON THE LIST</p>
         <div className="footer_input_container">
           <input
             type="text"
@@ -37,7 +37,7 @@ const Footer: React.FC<Props> = ({}) => {
           © 2021 Yuga Labs LLC
         </p>
       </div>
-    </div>
+      </div>
   );
 };
 export default Footer;

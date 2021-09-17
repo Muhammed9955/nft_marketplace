@@ -1,5 +1,5 @@
 .navbar_container {
-  /* background-color: blue; */
+  background-color: black;
   width: 100%;
   height: 15vh;
   color: white;
@@ -14,16 +14,21 @@
   transition: 0.15s;
   text-transform: uppercase;
   /* width: 80%; */
-  margin: auto;
+  /* margin: auto; */
+  /* position: relative; */
 }
 .routes_list {
   display: flex;
   align-items: center;
-  margin-right: 5rem;
+  /* margin-right: 3rem; */
 }
 .nav_logo {
   height: 12vh;
   object-fit: contain;
+  cursor: pointer;
+}
+.nav_icons {
+  margin-left: 3rem;
 }
 
 .icon {
@@ -31,6 +36,9 @@
   height: 1.3rem;
 }
 
+.route_item {
+  font-size: 0.9rem;
+}
 .route_item:hover {
   cursor: pointer;
   color: yellow;
@@ -43,4 +51,35 @@
   color: yellow;
   transition: 1s;
   /* color: #bfc500; */
+}
+.nav_mob__icon {
+  font-size: 2.5rem;
+  margin-right: 2rem;
+}
+.nav_mob {
+  position: relative;
+}
+.nav_mob__menu {
+  overflow: hidden;
+  position: absolute;
+  top: 10vh;
+  right: 0;
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  text-align: right;
+  transition: 850ms;
+  background-color: black;
+  width: 100vw;
+  height: 30vh;
+}
+.active {
+  height: 30vh;
+}
+@media only screen and (max-width: 666px) {
+  .routes_list {
+    display: none;
+  }
 }
