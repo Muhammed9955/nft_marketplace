@@ -6,6 +6,7 @@
   justify-content: space-around;
   border-radius: 5px;
   margin: 3rem 0;
+  padding: 1rem;
 }
 .btn {
   background-color: black;
@@ -23,6 +24,7 @@
 .BuyAnAPE_p {
   width: 30%;
   font-size: 1.2rem;
+  text-align: center;
 }
 .BuyAnAPE_title {
   font-style: italic;

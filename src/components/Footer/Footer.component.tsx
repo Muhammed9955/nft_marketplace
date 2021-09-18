@@ -7,12 +7,14 @@ import { FaDiscord } from "react-icons/fa";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { BsArrowRight } from "react-icons/bs";
 
-interface Props {}
+interface Props {
+  scrollToHome: any;
+}
 
-const Footer: React.FC<Props> = ({}) => {
+const Footer: React.FC<Props> = ({ scrollToHome }) => {
   return (
     <div className="footer">
-      <div className="">
+      {/* <div className="">
         <p className="fotter_text">GET ON THE LIST</p>
         <div className="footer_input_container">
           <input
@@ -24,8 +26,13 @@ const Footer: React.FC<Props> = ({}) => {
             <BsArrowRight className="input_icon" />
           </div>
         </div>
-      </div>
-      <img src={logo} alt="footer_logo" className="footer_logo" />
+      </div> */}
+      <img
+        src={logo}
+        alt="footer_logo"
+        className="footer_logo"
+        onClick={() => scrollToHome()}
+      />
       <div className="">
         <div className="">
           <AiFillYoutube className="icon mr_m" />
@@ -37,7 +44,7 @@ const Footer: React.FC<Props> = ({}) => {
           © 2021 Yuga Labs LLC
         </p>
       </div>
-      </div>
+    </div>
   );
 };
 export default Footer;

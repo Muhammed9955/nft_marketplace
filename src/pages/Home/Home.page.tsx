@@ -16,14 +16,20 @@ interface Props {
   buyAnApeRef: any;
   roadMapRef: any;
   teamRef: any;
+  scrollToHome: any;
 }
 
-const Home: React.FC<Props> = ({ buyAnApeRef, roadMapRef, teamRef }) => {
+const Home: React.FC<Props> = ({
+  buyAnApeRef,
+  roadMapRef,
+  teamRef,
+  scrollToHome,
+}) => {
   // components
   const title1 = (
     <h1>
       WELCOME TO THE <br />
-      BORED APE YACHT CLUB
+      (NOT) BORED APE SOL CLUB
     </h1>
   );
   const title2 = (
@@ -34,13 +40,13 @@ const Home: React.FC<Props> = ({ buyAnApeRef, roadMapRef, teamRef }) => {
         FAIR DISTRIBUTION <br />{" "}
       </h1>
       <p style={{ color: "white", fontSize: "1.2rem", marginTop: "-1.5rem" }}>
-        (BONDING CURVES ARE A PONZI)
+        (BONDING CURVES ARE NOT A PONZI)
       </p>{" "}
     </div>
   );
   const title3 = <h1 className="p_title">THE SPECS</h1>;
   const title4 = <h1 className="p_title">WELCOME TO THE CLUB</h1>;
-  const title5 = <h1 className="p_title">THE BATHROOM</h1>;
+  const title5 = <h1 className="p_title">LAND OF THE APES</h1>;
   const title6 = <h1 className="p_title">ROADMAP ACTIVATIONS</h1>;
   const title7 = <h1 className="p_title">COMMUNITY TOOLS</h1>;
   const title8 = <h1 className="p_title">THE TEAM</h1>;
@@ -48,7 +54,7 @@ const Home: React.FC<Props> = ({ buyAnApeRef, roadMapRef, teamRef }) => {
   const homeRow_2_Right = (
     <div className="homeRow_2_Right">
       Note: Thirty apes are being withheld from the sale. These will be used for
-      giveaways, puzzle rewards—and for the creators' BAYC memberships.
+      giveaways to help promote the Apes.
     </div>
   );
   const btns = (
@@ -60,24 +66,22 @@ const Home: React.FC<Props> = ({ buyAnApeRef, roadMapRef, teamRef }) => {
   const p8 = (
     <div className="">
       <p>
-        BAYC was created by four friends who set out to make some dope apes,
-        test our skills, and try to build something (ridiculous).
+        BASC was (not) created by four friends who set out to make some sick
+        apes, test our skills, and try to build something (stupid).
       </p>
       <p>
-        <span style={{ color: "yellow" }}>GARGAMEL.</span> STARCRAFT OBSESSED.
-        EATS SMURFS.
+        <span style={{ color: "yellow" }}>GARGAMEL.</span> SNIFFS COCAINE.
       </p>
       <p>
-        <span style={{ color: "yellow" }}> GORDON GONER.</span> REFORMED
-        LEVERAGE ADDICT
+        <span style={{ color: "yellow" }}> GORDON GONER.</span> STILL A LEVERAGE
+        ADDICT.
       </p>
       <p>
-        <span style={{ color: "yellow" }}> EMPEROR TOMATO KETCHUP.</span> SPENT
-        ALL THEIR MONEY ON FIRST PRESSES AND PET-NAT.
+        <span style={{ color: "yellow" }}> EMPEROR TOMATO KETCHUP.</span>NFT
+        MAXIMALIST.
       </p>
       <p>
-        <span style={{ color: "yellow" }}> NO SASS.</span> HERE FOR THE APES.
-        NOT FOR THE SASS.
+        <span style={{ color: "yellow" }}> NO SASS.</span> NOT SASSY AT ALL.
       </p>
     </div>
   );
@@ -122,13 +126,13 @@ const Home: React.FC<Props> = ({ buyAnApeRef, roadMapRef, teamRef }) => {
         />
         <Roadmap />
         <hr style={{ opacity: ".4" }} />
-        <HomeRow
+        {/* <HomeRow
           leftItem={<Pharagraph title={title7} paragraph={p7} />}
           rightItem={btns}
           smL={8}
           smR={4}
         />
-        <hr style={{ opacity: ".4" }} />
+        <hr style={{ opacity: ".4" }} /> */}
         <HomeRow
           leftItem={<Pharagraph title={title8} customComp={p8} />}
           rightItem={<ImgsContainer imgs={imgsArr2} />}
@@ -140,17 +144,9 @@ const Home: React.FC<Props> = ({ buyAnApeRef, roadMapRef, teamRef }) => {
           <span>0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D</span>
         </h4>
         <hr />
-        <Footer />
+        <Footer scrollToHome={scrollToHome} />
         <br />
       </div>
-      {/* <div
-        style={{
-          background: "yellow",
-          height: "5vh",
-          width: "100vw",
-          margin: "auto",
-        }}
-      ></div> */}
     </>
   );
 };

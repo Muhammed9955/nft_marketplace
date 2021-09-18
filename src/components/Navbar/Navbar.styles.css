@@ -58,6 +58,7 @@
 }
 .nav_mob {
   position: relative;
+  display: none;
 }
 .nav_mob__menu {
   overflow: hidden;
@@ -78,8 +79,11 @@
 .active {
   height: 30vh;
 }
-@media only screen and (max-width: 666px) {
+@media only screen and (max-width: 600px) {
   .routes_list {
     display: none;
+  }
+  .nav_mob {
+    display: block;
   }
 }

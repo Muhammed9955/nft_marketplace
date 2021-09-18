@@ -35,6 +35,7 @@ function App() {
           buyAnApeRef={buyAnApeRef}
           roadMapRef={roadMapRef}
           teamRef={teamRef}
+          scrollToHome={scrollToHome}
         />
       </div>
     </div>

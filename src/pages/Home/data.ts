@@ -19,7 +19,7 @@ export const cardsArr = [
     img: icon1,
   },
   {
-    text: "Fair Launch, fair distribution: All apes cost 0.08 ETH",
+    text: "Fair Launch, fair distribution: All apes cost 1 SOL",
     img: icon2,
   },
   {
@@ -37,31 +37,27 @@ export const cardsArr = [
 ];
 export const roadMapData = [
   {
-    text: "We pay back our moms.",
+    text: "We pay back our dads.",
     percentage: "10%",
   },
   {
-    text: "We release the Caged Apes. 5 Caged Apes (tokens held back from the sale) are airdropped to random Apeholders.",
+    text: "We find out they were not our real dads.",
     percentage: "20%",
   },
   {
-    text: "BAYC gets its own YouTube channel, BAYC LoFi Radio - Beats to Ape into Shitcoins To.",
+    text: "Fuck it, who’s your daddy then",
     percentage: "30%",
   },
   {
-    text: "Member-Exclusive BAYC Merch Store gets unlocked, featuring Limited Edition tees, hoodies, and other goodies.",
-    percentage: "60%",
+    text: "Open our ‘free to Join’ club. Allowing NFT artists to collaborate on future reward programs for the Land of Apes game.",
+    percentage: "50%",
   },
   {
-    text: "The clubhouse image becomes interactive and the Mysterious Note becomes legible, beginning a treasure hunt. The first to solve the mystery will be rewarded 5 ETH and a Bored Ape.",
-    percentage: "80%",
+    text: "Reward our holders with a SOL airdrop.",
+    percentage: "70%",
   },
   {
-    text: "The Bored Ape liquidity pool is initiated.",
-    percentage: "90%",
-  },
-  {
-    text: "The Mutant Ape (NFT Breeding) Arcade Machine gets ﬁxed. And we cook up new ways to ape with our friends.",
+    text: "Release of Land of the Apes game.",
     percentage: "100%",
   },
 ];
@@ -69,28 +65,27 @@ export const roadMapData = [
 export const imgs: string[] = [ape1, ape2, ape3, ape4];
 export const imgsArr2: string[] = [img1, img2, img3, img4];
 export const p1: [String] = [
-  "BAYC is a collection of 10,000 Bored Ape NFTs—unique digital collectibles living on the Ethereum blockchain. Your Bored Ape doubles as your Yacht Club membership card, and grants access to members-only benefits, the first of which is access to THE BATHROOM, a collaborative graffiti board. Future areas and perks can be unlocked by the community through roadmap activation.",
+  "BASC is a collection of 10,000 (Not) Bored Ape NFTs—unique digital collectibles living on the Solana blockchain. Your (Not) Bored Ape (does not) double as a Sol Club membership card however, will grant you access to a private lounge on our discord channel. The future will bring a play-to-earn ‘The Land of the Apes’ metaverse game.",
 ];
 // p2
 export const p2: String[] = [
-  "There are no bonding curves here. Buying a Bored Ape costs 0.08 ETH. There are no price tiers; BAYC membership costs the same for everyone.",
+  "There are no bonding curves here, unfortunately. Buying a Bored Sol Ape costs 1 SOL. There are no price tiers; and membership costs are totally (not) free.",
 ];
 export const p3: String[] = [
-  "Each Bored Ape is unique and programmatically generated from over 170 possible traits, including expression, headwear, clothing, and more. All apes are dope, but some are rarer than others.",
-  "The apes are stored as ERC-721 tokens on the Ethereum blockchain and hosted on IPFS. (See Record and Proof.) Purchasing an ape costs 0.08 ETH.",
-  "To access members-only areas such as THE BATHROOM, Apeholders will need to be signed into their Metamask Wallet.",
+  "Each Bored Ape is unique and is (not) programmatically generated from over 170 possible traits (in fact, it’s 280 traits), including expression, headwear, clothing, hats and more. All apes are ‘sick’ some with the “vid” but some are rarer than others.",
+  "Purchasing an ape costs 1 SOL.",
 ];
 export const p4: String[] = [
-  "When you buy a Bored Ape, you’re not simply buying an avatar or a provably-rare piece of art. You are gaining membership access to a club whose benefits and offerings will increase over time. Your Bored Ape can serve as your digital identity, and open digital doors for you.",
+  "When you buy a Bored Ape, you’re not simply buying an avatar or a probably-rare piece of art. You are (not) gaining membership access to a club whose benefits and offerings will increase over time. Your Bored Ape can serve as your digital identity, and open digital doors for you.",
 ];
 export const p5: String[] = [
-  "The BAYC Bathroom will become operational once the presale period is over. It contains a canvas accessible only to wallets containing at least one ape. Like any good dive bar bathroom, this is the place to draw, scrawl, or write expletives.",
-  "Each ape-holder will be able to paint a pixel on the bathroom wall every fifteen minutes. Think of it as a collaborative art experiment for the cryptosphere. A members-only canvas for the discerning minds of crypto twitter.",
-  "We're pretty sure it's going to be full of dicks.",
+  "The ‘LAND OF THE APES’ metaverse game is a long term vision of this project.",
+  "Each ape-holder will be able to play in the land of the apes to help win tangible gifts and unique NFTs.",
+  "We're pretty sure it's going to be full of big dicks hunting tight vaginas",
 ];
 export const p6: String[] = [
-  "We’re in this for the long haul.",
-  "We’ve set up some goalposts for ourselves. Once we hit a target sell through percentage, we will begin to work on realizing the stated goal.",
+  "We’re in this for a bit of fun, but this could be the next big SOL NFT.",
+  "We’ve set the following objectives.",
 ];
 export const p7: String[] = [
   "Here are some helpful tools created by the Bored Ape Yacht Club community. Please note that these are unofficial in nature. Every assignment of an ape's overall value or rarity is inherently subjective.",
