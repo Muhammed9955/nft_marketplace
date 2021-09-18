@@ -32,7 +32,7 @@ const Roadmap: React.FC<Props> = ({}) => {
         }
         rightItem={
           <div className="roadMap_img_container">
-            <img src={shirt} alt="" className="roadMap_img" />
+            {/* <img src={shirt} alt="" className="roadMap_img" /> */}
           </div>
         }
       />
