@@ -7,7 +7,7 @@
   color: yellow;
 }
 .roadmap_text {
-  text-decoration: line-through;
+  /* text-decoration: line-through; */
 }
 .roadMap_img_container {
   width: 90%;
